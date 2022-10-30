@@ -27,6 +27,11 @@ img {
 .filter-button:hover {
   font-size: 18px;
   background-color: white;
+  outline: none;
+}
+
+.filter-button:focus {
+  outline: none;
 }
 
 .btn-default:active .filter-button:active {
