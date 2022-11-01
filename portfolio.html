@@ -17,31 +17,53 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>My Webpage</title>
+    <title>Projects</title>
   </head>
   <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-colour">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Projects</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="navbar-nav icon-spacing">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/vinzmyko" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:vinzmykodelrosario@gmail.com?Subject=%20" target="_blank"><ion-icon name="mail"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
 
     <!-- Section for everything that will be the portfolio-->
     <section id="portfolio">
       <div class="container">
         <div class="gallery col-lg-12 mx-auto">
           <h1 class="gallery-title">Projects</h1>
-        </div>
+      </div>
         <div>
           <!-- All the filters list, data-filter will be where you input the keys -->
           <button class="btn btn-default filter-button" data-filter="all">
             All
           </button>
           <button
-            class="btn btn-default filter-button"
-            data-filter="personalproject"
-          >
+            class="btn btn-default filter-button" data-filter="personalproject">
             Personal Projects
           </button>
           <button
-            class="btn btn-default filter-button"
-            data-filter="university"
-          >
+            class="btn btn-default filter-button" data-filter="university">
             University
           </button>
           <button class="btn btn-default filter-button" data-filter="unity">
@@ -50,21 +72,24 @@
           <button class="btn btn-default filter-button" data-filter="godot">
             Godot
           </button>
+          <button class="btn btn-default filter-button" data-filter="ps5">
+            PS5
+          </button>
         </div>
         <div class="row">
           <!-- The divisions that will show/not show with the data-filters as it's class-->
           <div
             class="gallery_product col-md-4 filter center personalproject godot"
           >
-            <img src="css/img/pokechess.png" onmouseover="this.src='css/gif/pokechess.gif'" onmouseout="this.src='css/img/pokechess.png'"/>
+            <a href="pokechess.html"><img src="css/img/pokechess.png" onmouseover="this.src='css/gif/pokechess.gif'" onmouseout="this.src='css/img/pokechess.png'"/></a>
           </div>
           <div
             class="gallery_product col-md-4 filter center personalproject unity"
           >
-            <img src="css/img/cerebellum.png" onmouseover="this.src='css/gif/cerebellum.gif'" onmouseout="this.src='css/img/cerebellum.png'"/>
+          <a href="cerebellum.html"><img src="css/img/cerebellum.png" onmouseover="this.src='css/gif/cerebellum.gif'" onmouseout="this.src='css/img/cerebellum.png'"/></a>
           </div>
-          <div class="gallery_product col-md-4 filter center university">
-            <img src="css/img/endlessrunner.png" onmouseover="this.src='css/gif/ps5.gif'" onmouseout="this.src='css/img/endlessrunner.png'"/>
+          <div class="gallery_product col-md-4 filter center university ps5">
+            <a href="endlessrunner.html"><img src="css/img/endlessrunner.png" onmouseover="this.src='css/gif/ps5.gif'" onmouseout="this.src='css/img/endlessrunner.png'"/></a>
           </div>
         </div>
       </div>
@@ -93,5 +118,8 @@
         $(this).addClass("active");
       });
     </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
