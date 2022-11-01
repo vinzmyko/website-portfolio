@@ -1,0 +1,3 @@
+Font: Nirmala UI
+Font Size: 55 pt
+Styling: Bold
