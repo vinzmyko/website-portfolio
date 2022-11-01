@@ -1,5 +1,25 @@
 body {
-  background-color: #f2f2f2;
+  background-color: #F0F5F9;
+}
+
+.navbar-colour {
+  background-color: #52616B;
+}
+
+.navitem {
+  color: #F0F5F9;
+}
+
+ion-icon {
+  font-size: 29px;
+}
+
+.icon-spacing {
+  padding-right: 10px;
+}
+
+.unity-webgl-transform-pos {
+  transform: translate(13%, 0%);
 }
 
 img {
