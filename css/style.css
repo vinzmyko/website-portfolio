@@ -2,6 +2,19 @@ body {
   background-color: #F0F5F9;
 }
 
+.blog_image {
+  height: 500px;
+  width: 900px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
 .navbar-colour {
   background-color: #52616B;
 }
